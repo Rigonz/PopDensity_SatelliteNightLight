@@ -58,4 +58,17 @@ Normalizing yields rather scattered relationships:
 
 ![NL 0-100%](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_0-100.png)
 
+## External correlations
+The rather low internal correlations among the datasets raises the question of which can be the strength of the relationship between population density and night-light measurements.
 
+## Scripts
+Two scripts are provided:
+* [POP CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/POP%20CHECK%20R0%20py36.py), performs the calculations with the population density rasters,
+* [NL CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/NL%20CHECK%20R0%20py36.py), which does a similar task with the nighlight measurements.
+
+The scripts are written in Python. They use the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
+
+They have been uploaded as they are on my computer: modifying the location of the files and other preferences should be quite straightforward.
+
+* 
+DENS POP reads geotiff raster files. For each country a raster with population counts and another with population densities are required.
