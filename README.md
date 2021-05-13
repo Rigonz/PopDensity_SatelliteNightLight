@@ -35,7 +35,7 @@ The datasets are highly correlated by pairs 1-2 and 3-4, as should be expected, 
 * DS1-4 = 0.693.
 * DS2-3 = 0.681.
 * DS2-4 = 0.681.
-* DS3-4 = 1.000..
+* DS3-4 = 1.000.
 
 The histograms are controlled by the low densities:
 
@@ -43,12 +43,13 @@ The histograms are controlled by the low densities:
 ![NL_HIST2](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_HIST2.png)
 
 The bivariate graphs confirm the moderate correlation:
+
 ![NL_BIVAR](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_BIVAR.png)
 ![NL_HEAT](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_HEAT.png)
 
 
 ### Nightlight Measurements
-The correlation among the datasets is only moderate, as indicated by the Pearson coefficients (after removing the 0s and no-data):
+The correlation among the datasets is also just moderate, as indicated by the Pearson coefficients (after removing the 0s and no-data):
 * DS1-2 = 0.632.
 * DS1-3 = 0.507.
 * DS2-3 = 0.646.
