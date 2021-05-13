@@ -54,17 +54,17 @@ The correlation among the datasets is also just moderate, as indicated by the Pe
 * DS1-3 = 0.507.
 * DS2-3 = 0.646.
 
-Normalizing yields rather loose relationships:
+Normalizing the data yields a loose relationship:
 
 ![NL 0-100%](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_0-100.png)
 
 ## External correlations
-The rather low internal correlations among the datasets raises the question of which can actually be the strength of the relationship between population density and night-light measurements. It should be quite straightforward to assess the correlation between a dataset of population densities and the nightlight readings of another dataset, but the variations across the datasets seem to make this exercise a tour inside the data bazaar, which I prefer to avoid
+The rather low internal correlations among the datasets raises the question of which can actually be the strength of the relationship between population density and night-light measurements. It should be quite straightforward to assess the correlation between a dataset of population densities and the nightlight readings from another dataset, but the observed variations across the datasets of the same type seem to make this exercise a walk alongside the data bazaar, which I prefer to avoid.
 
 ## Scripts
 Two scripts are provided:
-* [POP CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/POP%20CHECK%20R0%20py36.py), performs the calculations with the population density rasters,
-* [NL CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/NL%20CHECK%20R0%20py36.py), which does a similar task with the nighlight measurements.
+* [POP CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/POP%20CHECK%20R0%20py36.py), performs the calculations with the population density rasters.
+* [NL CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/NL%20CHECK%20R0%20py36.py), which does a similar task with the nightlight measurements.
 
 The scripts are written in Python. They use the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
 
