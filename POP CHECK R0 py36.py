@@ -11,10 +11,11 @@ Script that:
 3) makes charts showing the results.
 
 The input data corresponds to a region of the world (ESP) and represents
-the population density.
+the population density (pop/km2).
 Each file has from a data provider, or different calculation conditions.
 
-The checks consist in verifying that the input files refer to the same region.
+The checks consist in verifying that the input files refer to the same region
+and to some intercomparison indicators.
 
 The charts show the correlation among the different input data, as tuples
 associated to the same geographical location.

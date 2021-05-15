@@ -11,10 +11,11 @@ Script that:
 3) makes charts showing the results.
 
 The input data corresponds to a region of the world (ESP) and represents
-night light (NL).
+night light measures from satellites(NL; diffferent measures).
 Each file corresponds to a data provider (satellite or measurement conditions).
 
-The checks consist in verifying that the input files refer to the same region.
+The checks consist in verifying that the input files refer to the same region
+and to some intercomparison measures.
 
 The charts show the correlation among the different input data, as tuples
 associated to the same geographical location.
@@ -22,6 +23,7 @@ associated to the same geographical location.
 Version log.
 R0 (20210512):
 First trials, seems to work well.
+The selection of the (right, bottom) corner is diffferent to POP CHECK.
 
 '''
 
