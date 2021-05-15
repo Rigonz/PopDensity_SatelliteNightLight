@@ -45,6 +45,7 @@ The histograms are controlled by the low densities:
 The bivariate graphs confirm the moderate correlation:
 
 ![NL_BIVAR](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_BIVAR.png)
+
 ![NL_HEAT](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_HEAT.png)
 
 
@@ -59,12 +60,50 @@ Normalizing the data yields a loose relationship:
 ![NL 0-100%](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/NL_0-100.png)
 
 ## External correlations
-The rather low internal correlations among the datasets raises the question of which can actually be the strength of the relationship between population density and night-light measurements. It should be quite straightforward to assess the correlation between a dataset of population densities and the nightlight readings from another dataset, but the observed variations across the datasets of the same type seem to make this exercise a walk alongside the data bazaar, which I prefer to avoid.
+The rather low internal correlations among the datasets raises the question of which can actually be the strength of the relationship between population density and night-light measurements, and whether the selection of the appropriate pair of datasets (population density, night-light measurement) becomes a sort of data bazaar. 
+
+The results of the bivariate correlations, measured by the Pearson coefficient, are:
+* NL1-PD1 = 0.773.
+* NL1-PD2 = 0.763.
+* NL1-PD3 = 0.560.
+* NL1-PD4 = 0.559.
+* NL2-PD1 = 0.732.
+* NL2-PD2 = 0.732.
+* NL2-PD3 = 0.649.
+* NL2-PD4 = 0.638.
+* NL3-PD1 = 0.447.
+* NL3-PD2 = 0.438.
+* NL3-PD3 = 0.443.
+* NL3-PD4 = 0.441.
+
+The scatter plot for best and worst correlations is:
+
+![BEST-WORST](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/BEST-WORST.png)
+
+The results improve with a log-log transformation:
+* NL1-PD1 = 0.875.
+* NL1-PD2 = 0.872.
+* NL1-PD3 = 0.570.
+* NL1-PD4 = 0.571.
+* NL2-PD1 = 0.765.
+* NL2-PD2 = 0.762.
+* NL2-PD3 = 0.587.
+* NL2-PD4 = 0.588.
+* NL3-PD1 = 0.829.
+* NL3-PD2 = 0.827.
+* NL3-PD3 = 0.597.
+* NL3-PD4 = 0.600.
+
+And the corresponding heatmaps for the best and worst log-log correlations are:
+
+![HEATMAP_BEST](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/HEATMAP_BEST.png)
+![HEATMAP_WORST](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/Images/HEATMAP_WORST.png)
 
 ## Scripts
-Two scripts are provided:
+Three scripts are provided:
 * [POP CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/POP%20CHECK%20R0%20py36.py), performs the calculations with the population density rasters.
 * [NL CHECK](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/NL%20CHECK%20R0%20py36.py), which does a similar task with the nightlight measurements.
+* [NL-POP CROSS](https://github.com/Rigonz/PopDensity_SatelliteNightLight/blob/main/NL-POP%20CROSS%20R0%20py36.py), which compares the nightlight measurements to the population density estimates.
 
 The scripts are written in Python. They use the library [rasterio](https://rasterio.readthedocs.io/en/latest/index.html#), which I have not been able to run under python 3.8, but it works well under python 3.6.
 
